@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanHome — Уборка квартир в Краснодаре</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== ШАПКА ===== -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Clean<span>Home</span></a>
+      <nav class="nav">
+        <a href="#services">Услуги</a>
+        <a href="#calc">Калькулятор</a>
+        <a href="#how">Как работаем</a>
+        <a href="#reviews">Отзывы</a>
+      </nav>
+      <a href="#order" class="btn btn--accent">Заказать уборку</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="hero__label">Работаем по Краснодару</p>
+        <h1 class="hero__title">Уборка квартир<br>под ключ за 3 часа</h1>
+        <p class="hero__subtitle">Профессиональные клинеры, своя химия и оборудование. Приезжаем в удобное время, работаем аккуратно и быстро.</p>
+        <div class="hero__buttons">
+          <a href="#order" class="btn btn--accent btn--big">Заказать уборку</a>
+          <a href="#calc" class="btn btn--outline btn--big">Рассчитать стоимость</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img src="img/hero.jpg" alt="Уборка квартиры">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ПРЕИМУЩЕСТВА ===== -->
+  <section class="features">
+    <div class="container">
+      <div class="features__grid">
+        <div class="feature">
+          <h3>3 часа</h3>
+          <p>Средняя уборка двухкомнатной квартиры</p>
+        </div>
+        <div class="feature">
+          <h3>Своя химия</h3>
+          <p>Безопасные средства, привозим с собой</p>
+        </div>
+        <div class="feature">
+          <h3>Опыт 5+ лет</h3>
+          <p>Проверенные клинеры, работаем официально</p>
+        </div>
+        <div class="feature">
+          <h3>Гарантия</h3>
+          <p>Если что-то не понравится — переделаем бесплатно</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== КАЛЬКУЛЯТОР ===== -->
+  <section class="calc" id="calc">
+    <div class="container">
+      <h2 class="section-title">Рассчитайте стоимость</h2>
+      <div class="calc__inner">
+
+        <form class="calc__form" id="calcForm">
+          <div class="calc__field">
+            <label>Тип уборки</label>
+            <select id="calcType">
+              <option value="2500">Поддерживающая — 2500 ₽</option>
+              <option value="4000">Генеральная — 4000 ₽</option>
+              <option value="5500">После ремонта — 5500 ₽</option>
+            </select>
+          </div>
+
+          <div class="calc__field">
+            <label>Количество комнат</label>
+            <select id="calcRooms">
+              <option value="1">1 комната</option>
+              <option value="2">2 комнаты</option>
+              <option value="3">3 комнаты</option>
+              <option value="4">4 комнаты</option>
+            </select>
+          </div>
+
+          <div class="calc__field">
+            <label>Санузел</label>
+            <select id="calcBath">
+              <option value="1">1 санузел</option>
+              <option value="2">2 санузла</option>
+            </select>
+          </div>
+
+          <div class="calc__field">
+            <label class="calc__checkbox">
+              <input type="checkbox" id="calcWindows">
+              <span>Помыть окна (+500 ₽ за окно)</span>
+            </label>
+          </div>
+
+          <div class="calc__field">
+            <label>Количество окон</label>
+            <select id="calcWindowsCount">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+        </form>
+
+        <div class="calc__result">
+          <p class="calc__result-label">Примерная стоимость</p>
+          <p class="calc__result-price"><span id="calcPrice">2500</span> ₽</p>
+          <p class="calc__result-note">Точную цену назовём после уточнения деталей</p>
+          <a href="#order" class="btn btn--accent btn--big">Заказать уборку</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== УСЛУГИ ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Наши услуги</h2>
+      <div class="services__grid">
+
+        <div class="service-card">
+          <h3>Поддерживающая уборка</h3>
+          <p class="service-card__price">от 2500 ₽</p>
+          <ul class="service-card__list">
+            <li>Влажная уборка полов</li>
+            <li>Протирка пыли</li>
+            <li>Мытьё сантехники</li>
+            <li>Вынос мусора</li>
+          </ul>
+        </div>
+
+        <div class="service-card service-card--popular">
+          <p class="service-card__badge">Хит</p>
+          <h3>Генеральная уборка</h3>
+          <p class="service-card__price">от 4000 ₽</p>
+          <ul class="service-card__list">
+            <li>Всё из поддерживающей</li>
+            <li>Мытьё окон</li>
+            <li>Уборка кухни внутри шкафов</li>
+            <li>Мытьё люстр и светильников</li>
+            <li>Чистка плиты и вытяжки</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <h3>Уборка после ремонта</h3>
+          <p class="service-card__price">от 5500 ₽</p>
+          <ul class="service-card__list">
+            <li>Удаление строительной пыли</li>
+            <li>Мытьё окон и рам</li>
+            <li>Чистка всех поверхностей</li>
+            <li>Мытьё полов с дезинфекцией</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== КАК РАБОТАЕМ ===== -->
+  <section class="how" id="how">
+    <div class="container">
+      <h2 class="section-title">Как мы работаем</h2>
+      <div class="how__grid">
+        <div class="how__step">
+          <span class="how__num">1</span>
+          <h3>Оставляете заявку</h3>
+          <p>По телефону или через форму на сайте</p>
+        </div>
+        <div class="how__step">
+          <span class="how__num">2</span>
+          <h3>Уточняем детали</h3>
+          <p>Спрашиваем площадь, тип уборки и удобное время</p>
+        </div>
+        <div class="how__step">
+          <span class="how__num">3</span>
+          <h3>Приезжаем и убираем</h3>
+          <p>Клинеры приезжают со своей химией и оборудованием</p>
+        </div>
+        <div class="how__step">
+          <span class="how__num">4</span>
+          <h3>Принимаете работу</h3>
+          <p>Проверяете результат, оплачиваете удобным способом</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ОТЗЫВЫ ===== -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <h2 class="section-title">Отзывы клиентов</h2>
+      <div class="reviews__grid">
+
+        <div class="review">
+          <p class="review__text">«Заказывала генеральную уборку перед переездом. Сделали всё быстро и аккуратно, квартира блестит. Очень довольна!»</p>
+          <p class="review__author">— Анна, Краснодар</p>
+        </div>
+
+        <div class="review">
+          <p class="review__text">«Убирали после ремонта. Думал, пыль никогда не уберётся. Ребята справились за 4 часа, всё чисто. Рекомендую.»</p>
+          <p class="review__author">— Дмитрий, Краснодар</p>
+        </div>
+
+        <div class="review">
+          <p class="review__text">«Регулярно заказываю поддерживающую уборку. Всегда вовремя, всегда аккуратно. Приятно, что можно доверять.»</p>
+          <p class="review__author">— Мария, Краснодар</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ФОРМА ЗАЯВКИ ===== -->
+  <section class="order" id="order">
+    <div class="container order__inner">
+      <div class="order__text">
+        <h2 class="section-title">Оставьте заявку</h2>
+        <p>Перезвоним в течение 15 минут, уточним детали и назовём точную цену.</p>
+      </div>
+
+      <form class="order__form" action="https://formspree.io/f/ВАШ_ID" method="POST">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
+        <input type="text" name="address" placeholder="Адрес (район, улица)">
+        <textarea name="comment" rows="3" placeholder="Комментарий (что нужно убрать)"></textarea>
+        <button type="submit" class="btn btn--accent btn--big">Отправить заявку</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== ФУТЕР ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__logo">Clean<span>Home</span></p>
+      <p class="footer__copy">© 2027 Уборка квартир в Краснодаре</p>
+      <div class="footer__socials">
+        <a href="#">VK</a>
+        <a href="#">Telegram</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
